@@ -6,7 +6,11 @@ ruby "2.0.0"
 
 gem 'unicorn'
 gem 'rails_12factor', group: :production
-
+#gem 'bootstrap-sass'
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                          :github => 'anjlab/bootstrap-rails',
+                          :branch => '3.0.0'
+                          
 # Use postgresql as the database for Active Record
 gem 'pg'
 
@@ -47,3 +51,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'spree', github: 'spree/spree'
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
+
+gem 'mysql', group: :development
