@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 ruby "2.0.0"
 
+gem 'diffy'
 gem 'unicorn'
 gem 'rails_12factor', group: :production
 #gem 'bootstrap-sass'
@@ -52,7 +53,8 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'spree', github: 'spree/spree'
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
-
 gem 'mysql', group: :development
+
+gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-1-stable'
+gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-1-stable'
+gem 'spree', '2.1.0'
