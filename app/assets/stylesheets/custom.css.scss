@@ -1,0 +1,22 @@
+.header {
+  height: 20px;
+  background: #FFF;
+}
+
+.navbar > .container .shipping {
+  margin-left: -15px;
+}
+
+.navbar-inverse .shipping {
+  color: #fff;
+}
+
+.shipping {
+  float: left;
+  padding: 2px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-nav > li > a {padding: 2px 15px;}
+.navbar-inverse .navbar-nav > li > a {color: #fff}
